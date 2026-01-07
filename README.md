@@ -1,8 +1,40 @@
-# React + Vite
+<h1>Project Setup</h1>
+npm install
+npm run dev
+npm run build
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<h1> Folder Structure</h1>
 
-Currently, two official plugins are available:
+src/
+├── components/
+│   ├── Header.jsx
+│   ├── Footer.jsx
+│   ├── Navbar.jsx
+│   └── (other components)
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── About.jsx
+│   └── (more pages)
+│
+├── App.jsx
+└── main.jsx
+public/
+├── images/
+│   
+index.html
+package.json
+vite.config.js
+.gitignore
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<h1>Decisions</h1>
+Used Vite + React for fast development
+Created components folder (Header, Navbar, Footer etc) for clean structure
+Created pages folder to organize routing-based pages
+Used React Icons & FontAwesome CDN for icons
+Used .gitignore to ignore node_modules
+Followed modular component-based structure
+
+<h1>Live Demo </h1>
+
+https://trsdailybanglabarta.netlify.app/
