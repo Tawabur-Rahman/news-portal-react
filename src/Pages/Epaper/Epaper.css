@@ -1,0 +1,132 @@
+.epaper-page {
+  animation: fadeIn 0.6s ease-in;
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Header */
+.epaper-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  animation: slideDown 0.5s ease-in-out;
+}
+
+.epaper-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.epaper-date {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.epaper-edition {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+}
+
+.epaper-logo img {
+  height: 50px;
+  animation: zoomIn 0.4s ease-in;
+}
+
+.epaper-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Back Button */
+.back-btn {
+  background: transparent;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background: #007bff;
+  color: white;
+}
+
+/* Main Content */
+.epaper-body {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.epaper-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  animation: fadeIn 0.8s ease-in;
+}
+
+.epaper-img {
+  width: 100%;
+  max-width: 700px;
+  height: 100vh;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1s ease-in;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* ✅ Responsive Design */
+
+/* Tablet (max-width: 992px) */
+@media (max-width: 992px) {
+  .epaper-logo {
+    display: none; /* hide logo */
+  }
+  .epaper-right {
+    gap: 10px;
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+  .epaper-logo {
+    display: none; /* hide logo */
+  }
+  .epaper-header {
+    flex-direction: column; /* stack header items */
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .epaper-img {
+    max-width: 100%;
+    height: auto; /* smaller image */
+  }
+  .epaper-title {
+    font-size: 1.5rem;
+  }
+}
