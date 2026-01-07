@@ -1,31 +1,31 @@
 <h1>Project Setup</h1>
 npm install <br>
 npm run dev<br>
-npm run build
+npm run build (Build for Production)
 
 <h1> Folder Structure</h1>
 
-src/
-├── components/
-│   ├── Header.jsx
-│   ├── Footer.jsx
-│   ├── Navbar.jsx
-│   └── (other components)
+src/ <br>
+├── components/<br>
+│   ├── Header.jsx<br>
+│   ├── Footer.jsx<br>
+│   ├── Navbar.jsx<br>
+│   └── (other components)<br>
 │
-├── pages/
-│   ├── Home.jsx
-│   ├── About.jsx
-│   └── (more pages)
+├── pages/<br>
+│   ├── Home.jsx<br>
+│   ├── About.jsx<br>
+│   └── (more pages)<br>
 │
-├── App.jsx
-└── main.jsx
-public/
-├── images/
+├── App.jsx<br>
+└── main.jsx<br>
+public/<br>
+├── images/<br>
 │   
-index.html
-package.json
-vite.config.js
-.gitignore
+index.html<br>
+package.json<br>
+vite.config.js<br>
+.gitignore<br>
 
 <h1>Decisions</h1>
 Used Vite + React for fast development<br>
