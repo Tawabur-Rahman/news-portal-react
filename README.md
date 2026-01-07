@@ -20,7 +20,7 @@ src/ <br>
 ├── App.jsx<br>
 └── main.jsx<br>
 public/<br>
-├── images/<br>
+├── images<br>
 │   
 index.html<br>
 package.json<br>
