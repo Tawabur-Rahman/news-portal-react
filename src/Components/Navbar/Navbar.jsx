@@ -46,7 +46,7 @@ function Navbar() {
         </div>
 
         <div className="navbar-title">
-          <h1><span>Sakib</span></h1>
+          <h1><span>খবর যেখানে সত্যই মুখ্য</span></h1>
         </div>
 
         <div className="navbar-actions">
